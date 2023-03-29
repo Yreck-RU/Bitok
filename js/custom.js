@@ -486,6 +486,14 @@ if (selectSingles.length > 0) {
 			    selectSingle.setAttribute('data-state', '');
 			  });
 			}
+			document.addEventListener( 'click', (e) => {
+				let withinBoundaries = e.composedPath().includes(selectSingle_title);
+				let withinBoundaries2 = e.composedPath().includes(selectSingle_input);
+			 
+				if ( ! withinBoundaries && ! withinBoundaries2) {
+					selectSingle.setAttribute('data-state', '');
+				}
+			})
 
 		} else {
 			if (selectSingle_title) {
@@ -512,7 +520,7 @@ if (selectSingles.length > 0) {
 				if ( ! withinBoundaries && ! withinBoundaries2) {
 					selectSingle.setAttribute('data-state', '');
 				}
-			})
+			});
 		}
 	}
 }

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<!--Заголовок страницы, контейнер для других важных данных (не отображается)-->
+	<head>
+		<!--Заголовок страницы-->
+		<title>profil</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			sizes="192x192"
+			href="img/page-img.png"
+		/>
+		<!--===============================-->
+		<!--Libs-->
+
+			<!--JQ--><script src="libs/swiper-bundle.min.js"></script>
+
+		<!--===============================-->
+		<!--Css-->
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="libs/swiper-bundle.min.css" />
+		<!--===============================-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="format-detection" content="telephone=no">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="wrapper wrapper-alignment">
+			<header class="header">
+				<div class="container">
+					<div class="header__top">
+						<div  data-da=".burger-wrapper__languages, 767, last" class="header__languages header-languages">
+							<div class="header-languages__title">
+								<img src="img/header/1.png" alt="" class="header-languages__flag">
+								<span class="header-languages__pointer icon-pointer"></span>
+							</div>
+							<div class="header-languages__wrapper">
+								<a href="" class="header-languages__link">
+									<img src="img/header/1.png" alt="" class="header-languages__flag">
+									<span class="header-languages__pointer">RU</span>
+								</a>
+								<a href="" class="header-languages__link">
+									<img src="img/header/1.png" alt="" class="header-languages__flag">
+									<span class="header-languages__pointer">ENG</span>
+								</a>
+							</div>
+						</div>
+						<nav>
+							<ul data-da=".burger-wrapper__list, 767, last" class="header__nav">
+								<li class="header__link active">
+									<a href="" class="hover-black-link">Главная</a>
+								</li>
+								<li class="header__link">
+									<a href="" class="hover-black-link">Тарифы</a>
+								</li>
+								<li class="header__link">
+									<a href="" class="hover-black-link">Партнерам</a>
+								</li>
+								<li class="header__link">
+									<a href="" class="hover-black-link">Вопросы</a>
+								</li>
+								<li class="header__link">
+									<a href="" class="hover-black-link">Отзывы</a>
+								</li>
+								<li class="header__link">
+									<a href="" class="hover-black-link">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<div data-da=".burger-wrapper__schedule, 767, last" class="header__schedule">
+							График работы: <span>C 10-20 ПН-СБ</span>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom header-bottom">
+					<div class="container">
+						<div class="header-bottom__wrapper">
+							<div class="header__logo">
+								<a href=""><img src="img/header/2.png" alt=""></a>
+							</div>
+							<div class="menu-profil__wrapper">
+								<div class="menu-profil__title">
+									<span class="icon-human"></span> SmotrimBiz
+								</div>
+								<a href="" class="menu__icon-logaut menu-profil__icon-logaut">
+									<span class="icon-logaut hover-black-link"></span>
+								</a>
+								<div data-da=".burger-wrapper__messenger, 767, last" class="header-messenger">
+									<!--<a href="" class="header-messenger__link icon-watsap hover-white-button"></a>-->
+									<a href="" class="header-messenger__link icon-telegram hover-white-button"></a>
+									<!--<a href="" class="header-messenger__link icon-call hover-white-button"></a>-->
+								</div> 
+							</div>
+							<div class="menu__icon">
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__burger-wrapper burger-wrapper menu__body">
+					<div class="burger-wrapper__heder"></div>
+					<div class="burger-wrapper__bodu">
+						<div class="burger-wrapper__schedule">
+							
+						</div>
+						<div class="burger-wrapper__languages">
+							
+						</div>
+						<div class="burger-wrapper__list">
+							
+						</div>
+						<div class="burger-wrapper__form">
+							
+						</div>
+						<div class="burger-wrapper__messenger">
+							
+						</div>
+					</div>
+				</div>
+				<!--<div class="burger-form">
+					<div class="burger-wrapper__heder"></div>
+					<div class="burger-form__wrapper">
+						<div class="burger-form__title">
+							Авторизация
+						</div>
+						<div class="burger-form__body">
+							
+						</div>
+					</div>
+				</div>-->
+			</header>
+			<div class="content">
+				<div class="profil _tab">
+					<div class="container">
+						<div class="profil__wrapper">
+							<div class="profil__nav profil-nav">
+								<!--<div class="profil-nav__logo-body">
+									<div class="profil-nav__logo ibg">
+										<img src="img/profil/1.png" alt="">
+									</div>
+									<div class="profil-nav__logo-title">
+										SmotrimBiz
+									</div>
+								</div>-->
+								<div class="profil-nav__list _tab-link-body">
+									<a href="#_tab-body1" onclick="return false" class="profil-nav-item _tab-link">
+										<div class="profil-nav-item__text">
+											История заявок
+										</div>
+										<div class="profil-nav-item__icon icon-watch-arrow"></div>
+									</a>
+									<a href="#_tab-body2" onclick="return false" class="profil-nav-item _tab-link">
+										<div class="profil-nav-item__text">
+											Партнерская программа
+										</div>
+										<div class="profil-nav-item__icon icon-suitcase"></div>
+									</a>
+									<a href="#_tab-body3" onclick="return false" class="profil-nav-item _tab-link">
+										<div class="profil-nav-item__text">
+											Профиль
+										</div>
+										<div class="profil-nav-item__icon icon-human-square"></div>
+									</a>
+									<a href="#_tab-body4" onclick="return false" class="profil-nav-item _tab-link active">
+										<div class="profil-nav-item__text">
+											Верификация
+										</div>
+										<div class="profil-nav-item__icon icon-confirmed"></div>
+									</a>
+								</div>
+								<!--<a href="" class="profil-nav-exit">
+									<div class="profil-nav-exit__text">
+										Выйти
+									</div>
+									<div class="profil-nav-exit__icon icon-logaut"></div>
+								</a>-->
+							</div>
+							<div class="profil__content">
+								<div class="profil-blok profil-blok-profil _tab-body hide" id="_tab-body3">
+									<div class="profil-blok__title">
+										<span class="icon-human-square"></span>Профиль
+									</div>
+									<div class="warning warning-profil-blok-profil active">
+										<div class="warning__container">
+											<div class="warning__text">
+												Пароль успешно изменен
+											</div>
+											<div class="warning__button">
+												<span></span>
+											</div>
+										</div>
+									</div>
+									<div class="profil-blok-profil__body">
+										<form class="profil-blok-profil__blok _form-validation__wrapper">
+											<div class="profil-blok-profil__title">
+												Личные данные
+											</div>
+											<div class="_form-validation__body">
+												<div class="profil-blok-profil__input-title">
+													Логин
+												</div>
+												<input type="text" name="" class="_form-validation__input profil-blok-profil__input input _input-placeholder input_pading-0-15-0-15" data-default="Option 0">
+												<div class="error-text">
+													Вы не указали Логинs
+												</div>
+											</div>
+											<div class="_form-validation__body">
+												<div class="profil-blok-profil__input-title">
+													E-mail
+												</div>
+												<input type="text" name="" class="_form-validation__input profil-blok-profil__input input _input-placeholder input_pading-0-15-0-15" data-default="Option 0">
+												<div class="error-text">
+													Вы не указали E-mail
+												</div>
+											</div>
+											<div class="_form-validation__body">
+												<div class="profil-blok-profil__input-title">
+													Телефон
+												</div>
+												<input type="text" name="" class="_form-validation__input profil-blok-profil__input input _input-placeholder input_pading-0-15-0-15" data-default="Option 0">
+												<div class="error-text">
+													Вы не указали Телефон
+												</div>
+											</div>
+											<button onclick="return false" class="_form-validation__button calculator-form__button hover-yellow-button profil-blok-profil__button-yellow">Сохранить</button>
+										</form>
+										<form class="profil-blok-profil__blok _form-validation__wrapper">
+											<div class="profil-blok-profil__title">
+												Смена пароля
+											</div>
+											<div class="_form-validation__body">
+												<div class="profil-blok-profil__input-title">
+													Старый пароль
+												</div>
+												<input type="text" name="" class="_form-validation__input profil-blok-profil__input input _input-placeholder input_pading-0-15-0-15" data-default="Option 0">
+												<div class="error-text">
+													Вы не указали Старый пароль
+												</div>
+											</div>
+											<div class="_form-validation__body">
+												<div class="profil-blok-profil__input-title">
+													Новый пароль
+												</div>
+												<input type="text" name="" class="_form-validation__input profil-blok-profil__input input _input-placeholder input_pading-0-15-0-15" data-default="Option 0">
+												<div class="error-text">
+													Вы не указали Новый пароль
+												</div>
+											</div>
+											<div class="_form-validation__body">
+												<div class="profil-blok-profil__input-title">
+													Новый пароль еще раз
+												</div>
+												<input type="text" name="" class="_form-validation__input profil-blok-profil__input input _input-placeholder input_pading-0-15-0-15" data-default="Option 0">
+												<div class="error-text">
+													Вы не указали Новый пароль
+												</div>
+											</div>
+											<button onclick="return false" class="_form-validation__button calculator-form__button hover-transparent-button profil-blok-profil__button-transperent">Изменить пароль</button>
+										</form>
+									</div>
+								</div>
+								<div class="profil-blok profil-blok-verification _tab-body" id="_tab-body4">
+									<form class="_form-validation__wrapper">
+										<div class="profil-blok__title">
+											<span class="icon-confirmed"></span>Верификация
+										</div>
+										<div class="profil-blok-profil__title">
+											Верификация документов
+										</div>
+										<div class="">
+											<div class="profil-blok-profil__input-title">
+												Паспорт или ID 
+											</div>
+											<div class="input-file__wrapper _form-validation__body">
+												<input name="file" type="file" name="file" id="input__file-1" class="input__file _form-validation__input" multiple>
+												<label for="input__file-1" class="input__file-button profil-input__file">
+													<span class="input__file-button-text">Загрузить фото</span>
+													<span class="input__file-icon-wrapper icon-dounlot"></span>
+												</label>
+												<div class="error-text">
+													Вы не загрузили фото
+												</div>
+											</div>
+										</div>
+										<div class="">
+											<div class="profil-blok-profil__input-title">
+												Подтверждение адреса регистрации
+											</div>
+											<div class="input-file__wrapper _form-validation__body">
+												<input name="file" type="file" name="file" id="input__file-2" class="input__file _form-validation__input" multiple>
+												<label for="input__file-2" class="input__file-button profil-input__file">
+													<span class="input__file-button-text">Загрузить фото</span>
+													<span class="input__file-icon-wrapper icon-dounlot"></span>
+												</label>
+												<div class="error-text">
+													Вы не загрузили фото
+												</div>
+											</div>
+										</div>
+										<div class="">
+											<div class="profil-blok-profil__input-title">
+												Селфи с паспортом или ID, подписью от руки Bitok.Me и датой
+											</div>
+											<div class="input-file__wrapper _form-validation__body">
+												<input name="file" type="file" name="file" id="input__file-3" class="input__file _form-validation__input" multiple>
+												<label for="input__file-3" class="input__file-button profil-input__file">
+													<span class="input__file-button-text">Загрузить фото</span>
+													<span class="input__file-icon-wrapper icon-dounlot"></span>
+												</label>
+												<div class="error-text">
+													Вы не загрузили фото
+												</div>
+											</div>
+										</div>
+										<div class="profil-blok-profil__input-title">
+											.GIF,.JPG,.JPEG,.JPE,.PNG, Макс. размер 2MB
+										</div>
+										<button onclick="return false" class="_form-validation__button calculator-form__button hover-yellow-button profil-blok-profil__button-yellow">Отправить запрос</button>
+									</form>
+
+									<img src="img/profil/4.png" alt="" class="profil-blok-verification__img">
+
+									<form class="_form-validation__wrapper">
+										<div class="profil-blok-profil__title">
+											Верификация документов
+										</div>
+										<div class="profil-blok-verification-body">
+											<div class="profil-blok-verification-body__content">
+												<div class="profil-blok-verification-body__title">
+													Загрузить фото Вашей карты со следующим текстом
+													написанным от руки:
+												</div>
+												<div class="profil-blok-verification-body__text">
+													Я <span>Имя Фамилия Отчество</span>
+												</div>
+												<div class="profil-blok-verification-body__text profil-blok-verification-body__text_margin">
+													покупаю электронную валюту или криптовалюту
+													на платформе LionChange.com с моей личной 
+													банковской карты с номером ** ** **** 1234
+												</div>
+												<div class="profil-blok-verification-body__text profil-blok-verification-body__text_margin">
+													<span>( Ваша карта )</span>
+												</div>
+												<div class="profil-blok-verification-body__text profil-blok-verification-body__text_margin">
+													Реквизиты для получения электронных валют и 
+													криптовалют принадлежат мне и доступа к ним
+													у третьих лиц нет
+												</div>
+												<div class="profil-blok-verification-body__wrapper">
+													<div class="">ДД.ММ.ГГ</div>
+													<div class="">Ваша подпись</div>
+												</div>
+											</div>
+											<div class="profil-blok-verification-body__img">
+												<img src="img/profil/5.png" alt="">
+											</div>
+										</div>
+										<div class="input-file__wrapper input-file__wrapper_margin-none _form-validation__body">
+											<input name="file" type="file" name="file" id="input__file-4" class="input__file _form-validation__input" multiple>
+											<label for="input__file-4" class="input__file-button profil-input__file">
+												<span class="input__file-button-text">Загрузить фото</span>
+												<span class="input__file-icon-wrapper icon-dounlot"></span>
+											</label>
+											<div class="error-text">
+												Вы не загрузили фото
+											</div>
+										</div>
+										<button onclick="return false" class="_form-validation__button calculator-form__button hover-yellow-button profil-blok-profil__button-yellow">Отправить запрос</button>
+									</form>
+
+									<div class="profil-blok-verification__file-checked">
+										Проверено
+									</div>
+								</div>
+								<div class="profil-blok profil-affiliate-program _tab-body hide" id="_tab-body2">
+									<div class="profil-blok__title">
+										<span class="icon-suitcase"></span>Партнерская программа
+									</div>
+									<div class="profil-affiliate-program__wrapper">
+										<div class="profil-affiliate-program__text">
+											<div class="profil-affiliate-program__title profil-affiliate-program__title_margin-15">
+												Партнерская ссылка
+											</div>
+											<div class="profil-affiliate-program__link">
+												http://bitok.me?rid=24 <button>Коп.</button>
+											</div>
+										</div>
+										<div class="profil-affiliate-program__body">
+											<div class="profil-affiliate-program__content">
+												<div class="profil-affiliate-program__title profil-affiliate-program__title_margin-15 profil-affiliate-program__title_wrapper">
+												Количество обменов: <span>4</span>
+												</div>
+												<div class="profil-affiliate-program__title profil-affiliate-program__title_wrapper">
+												Текущий баланс: <span>32.65 USD</span>
+												</div>
+											</div>
+											<div class="profil-affiliate-program__button">
+												<a href="popup-payment-order" class="popup-link hover-yellow-button">Заказать выплату</a>
+											</div>
+										</div>
+									</div>
+									<div class="profil-affiliate-program-table">
+										<table>
+												<tbody>
+													<tr>
+														<td class="profil-affiliate-program-table__title">ID</td>
+														<td class="profil-affiliate-program-table__title">Дата</td>
+														<td class="profil-affiliate-program-table__title">Пользователь</td>
+														<td class="profil-affiliate-program-table__title">Вознаграждение</td>
+													</tr>
+													<tr>
+														<td class="profil-affiliate-program-table__text">0003245234</td>
+														<td class="profil-affiliate-program-table__text">28.04.2022 12:01</td>
+														<td class="profil-affiliate-program-table__text">SmotrimBiz</td>
+														<td class="profil-affiliate-program-table__text">10 USD</td>
+													</tr>
+													<tr>
+														<td class="profil-affiliate-program-table__text">0003245234</td>
+														<td class="profil-affiliate-program-table__text">28.04.2022 12:01</td>
+														<td class="profil-affiliate-program-table__text">SmotrimBiz</td>
+														<td class="profil-affiliate-program-table__text">10 USD</td>
+													</tr>
+													<tr>
+														<td class="profil-affiliate-program-table__text">0003245234</td>
+														<td class="profil-affiliate-program-table__text">28.04.2022 12:01</td>
+														<td class="profil-affiliate-program-table__text">SmotrimBiz</td>
+														<td class="profil-affiliate-program-table__text">10 USD</td>
+													</tr>
+													<tr>
+														<td class="profil-affiliate-program-table__text">0003245234</td>
+														<td class="profil-affiliate-program-table__text">28.04.2022 12:01</td>
+														<td class="profil-affiliate-program-table__text">SmotrimBiz</td>
+														<td class="profil-affiliate-program-table__text">10 USD</td>
+													</tr>
+													<tr>
+														<td class="profil-affiliate-program-table__text">0003245234</td>
+														<td class="profil-affiliate-program-table__text">28.04.2022 12:01</td>
+														<td class="profil-affiliate-program-table__text">SmotrimBiz</td>
+														<td class="profil-affiliate-program-table__text">10 USD</td>
+													</tr>
+													<tr>
+														<td class="profil-affiliate-program-table__text">0003245234</td>
+														<td class="profil-affiliate-program-table__text">28.04.2022 12:01</td>
+														<td class="profil-affiliate-program-table__text">SmotrimBiz</td>
+														<td class="profil-affiliate-program-table__text">10 USD</td>
+													</tr>
+													<tr>
+														<td class="profil-affiliate-program-table__text">0003245234</td>
+														<td class="profil-affiliate-program-table__text">28.04.2022 12:01</td>
+														<td class="profil-affiliate-program-table__text">SmotrimBiz</td>
+														<td class="profil-affiliate-program-table__text">10 USD</td>
+													</tr>
+												</tbody>
+										</table>
+									</div>
+									<div class="pagineishin profil-affiliate-program_pagineishin">
+										<div class="pagineishin__items">
+											<a href="" class="icon-pointer hover-black-link"></a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">1</a>
+										</div>
+										<div class="pagineishin__items active">
+											<a href="" class="hover-black-link">2</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">3</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">4</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">5</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">6</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">7</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">8</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">9</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">10</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="icon-pointer hover-black-link"></a>
+										</div>
+									</div>
+								</div>
+								<div class="profil-blok profil-story _tab-body hide" id="_tab-body1">
+									<div class="profil-story__title">
+										<div class="profil-blok__title">
+											<span class="icon-watch-arrow"></span>История заявок
+										</div>
+										<a href="" class="profil-story__button hover-yellow-button">
+											Совершить обмен
+										</a>
+									</div>
+									<div class="profil-story-table">
+										<table>
+												<tbody>
+													<tr>
+														<td class="profil-story-table__text profil-story-table__text_title">Дата</td>
+														<td class="profil-story-table__text profil-story-table__text_title">Отдаете</td>
+														<td class="profil-story-table__text profil-story-table__text_title">Сумма</td>
+														<td class="profil-story-table__text profil-story-table__text_title">Получаете</td>
+														<td class="profil-story-table__text profil-story-table__text_title">Сумма</td>
+														<td class="profil-story-table__text profil-story-table__text_title">Статус</td>
+													</tr>
+													<tr>
+														<td class="profil-story-table__text">28.04.2022 12:01</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Bitcoin BTC</td>
+														<td class="profil-story-table__text">1 BTC</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Наличные USD</td>
+														<td class="profil-story-table__text">39041.66</td>
+														<td class="profil-story-table__text"><a href="" class="profil-story-table__text_performed">Выполнена</a></td>
+													</tr>
+													<tr>
+														<td class="profil-story-table__text">28.04.2022 12:01</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Bitcoin BTC</td>
+														<td class="profil-story-table__text">1 BTC</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Наличные USD</td>
+														<td class="profil-story-table__text">39041.66</td>
+														<td class="profil-story-table__text"><a href="" class="profil-story-table__text_performed">Выполнена</a></td>
+													</tr>
+													<tr>
+														<td class="profil-story-table__text">28.04.2022 12:01</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Bitcoin BTC</td>
+														<td class="profil-story-table__text">1 BTC</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Наличные USD</td>
+														<td class="profil-story-table__text">39041.66</td>
+														<td class="profil-story-table__text"><a href="" class="profil-story-table__text_performed">Выполнена</a></td>
+													</tr>
+													<tr>
+														<td class="profil-story-table__text">28.04.2022 12:01</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Bitcoin BTC</td>
+														<td class="profil-story-table__text">1 BTC</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Наличные USD</td>
+														<td class="profil-story-table__text">39041.66</td>
+														<td class="profil-story-table__text"><a href="" class="profil-story-table__text_expectations">Выполнена</a></td>
+													</tr>
+													<tr>
+														<td class="profil-story-table__text">28.04.2022 12:01</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Bitcoin BTC</td>
+														<td class="profil-story-table__text">1 BTC</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Наличные USD</td>
+														<td class="profil-story-table__text">39041.66</td>
+														<td class="profil-story-table__text"><a href="" class="profil-story-table__text_expectations">Выполнена</a></td>
+													</tr>
+													<tr>
+														<td class="profil-story-table__text">28.04.2022 12:01</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Bitcoin BTC</td>
+														<td class="profil-story-table__text">1 BTC</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Наличные USD</td>
+														<td class="profil-story-table__text">39041.66</td>
+														<td class="profil-story-table__text"><a href="" class="profil-story-table__text_expectations">Выполнена</a></td>
+													</tr>
+													<tr>
+														<td class="profil-story-table__text">28.04.2022 12:01</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Bitcoin BTC</td>
+														<td class="profil-story-table__text">1 BTC</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Наличные USD</td>
+														<td class="profil-story-table__text">39041.66</td>
+														<td class="profil-story-table__text"><a href="" class="profil-story-table__text_canceled">Выполнена</a></td>
+													</tr>
+													<tr>
+														<td class="profil-story-table__text">28.04.2022 12:01</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Bitcoin BTC</td>
+														<td class="profil-story-table__text">1 BTC</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Наличные USD</td>
+														<td class="profil-story-table__text">39041.66</td>
+														<td class="profil-story-table__text"><a href="" class="profil-story-table__text_canceled">Выполнена</a></td>
+													</tr>
+													<tr>
+														<td class="profil-story-table__text">28.04.2022 12:01</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Bitcoin BTC</td>
+														<td class="profil-story-table__text">1 BTC</td>
+														<td class="profil-story-table__text profil-story-table__text_grai">Наличные USD</td>
+														<td class="profil-story-table__text">39041.66</td>
+														<td class="profil-story-table__text"><a href="" class="profil-story-table__text_canceled">Выполнена</a></td>
+													</tr>
+												</tbody>
+										</table>
+									</div>
+									<div class="pagineishin profil-affiliate-program_pagineishin">
+										<div class="pagineishin__items">
+											<a href="" class="icon-pointer hover-black-link"></a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">1</a>
+										</div>
+										<div class="pagineishin__items active">
+											<a href="" class="hover-black-link">2</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">3</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">4</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">5</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">6</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">7</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">8</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">9</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="hover-black-link">10</a>
+										</div>
+										<div class="pagineishin__items">
+											<a href="" class="icon-pointer hover-black-link"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__wrapper">
+						<div class="footer__text footer-text">
+							<div class="footer-text__logo">
+								<img src="img/footer/Logo.svg" alt="">
+							</div>
+							<div class="footer-text__text">
+								Все права защищены. Copyright © 2016-2022
+							</div>
+						</div>
+						<div class="footer__body footer-body">
+							<div class="footer-body__blok">
+								<div class="footer-body__link">
+									<a href="" class="hover-black-link">Тарифы</a>
+								</div>
+								<div class="footer-body__link">
+									<a href="" class="hover-black-link">Партнерам</a>
+								</div>
+								<div class="footer-body__link">
+									<a href="" class="hover-black-link">Вопросы</a>
+								</div>
+								<div class="footer-body__link">
+									<a href="" class="hover-black-link">Отзывы</a>
+								</div>
+								<div class="footer-body__link">
+									<a href="" class="hover-black-link">Контакты</a>
+								</div>
+							</div>
+							<div class="footer-body__blok">
+								<div class="footer-body__link">
+									<a href="" class="hover-black-link">Правила обмена</a>
+								</div>
+								<div class="footer-body__link">
+									<a href="" class="hover-black-link">AML/KYC</a>
+								</div>
+								<div class="footer-body__link">
+									<a href="" class="hover-black-link">Cookies</a>
+								</div>
+								<div class="footer-body__link">
+									<a href="" class="hover-black-link">Резервы</a>
+								</div>
+								<div class="footer-body__link">
+									<a href="" class="hover-black-link">Для компаний</a>
+								</div>
+							</div>
+							<div class="footer-body__blok">
+								<div class="footer-body__link">
+									<a href="" class="hover-black-link">Как купить биткоин</a>
+								</div>
+								<div class="footer-body__link">
+									<a href="" class="hover-black-link">Как продать биткоин</a>
+								</div>
+								<div class="footer-body__link">
+									<a href="" class="hover-black-link">Недвижимость за </a>
+								</div>
+								<div class="footer-body__link">
+									<a href="" class="hover-black-link">криптовалюты</a>
+								</div>
+							</div>
+						</div>
+						<!--<div class="footer__messenger footer-messenger">
+							<a href="" class="footer-messenger__link hover-white-button icon-watsap"></a>
+							<a href="" class="footer-messenger__link hover-white-button icon-telegram"></a>
+							<a href="" class="footer-messenger__link hover-white-button icon-call"></a>
+						</div>-->
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="popup" id="popup-registration">
+			<div class="popup__body">
+				<div class="popup__content">
+
+					<div class="popup__title">
+						<span>Регистрация</span>
+
+						<a href="#" class="popup__close close-popup">
+							<span></span>
+						</a>
+					</div>
+					<form class="popup-form _form-validation__wrapper"> 
+						<div class="popup-form__title">
+							Логин
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-human icon"></span>
+							<input type="text" name="" class="input _input-placeholder input_pading-0-50-0-15 _form-validation__input" data-default="Option 0">
+						</div>
+						<div class="popup-form__title">
+							E-mail:
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-question icon"></span>
+							<input type="email" name="" class="input _input-placeholder input_pading-0-50-0-15 _form-validation__input" data-default="Option 0">
+						</div>
+						<div class="popup-form__title">
+							Пароль
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-lock icon"></span>
+							<input type="password" name="" class="input _input-placeholder input_pading-0-50-0-15 _form-validation__input" data-default="Option 0">
+						</div>
+						<div class="popup-form__title">
+							Пароль еще раз
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-lock icon"></span>
+							<input type="password" name="" class="input _input-placeholder input_pading-0-50-0-15 _form-validation__input" data-default="Option 0">
+						</div>
+						<div class="input-checkbox input-checkbox_margin-20px _form-validation__body">
+							<input type="checkbox" id="popup-checkbox-1" class="_form-validation__input"> 
+							<label for="popup-checkbox-1">С правилами сервиса ознакомлен и согласен</label>
+						</div>
+						<button onclick="return false" class="popup-form__button hover-yellow-button _form-validation__button">Зарегистрироваться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popup-authorization">
+			<div class="popup__body">
+				<div class="popup__content">
+
+					<div class="popup__title">
+						<span>Авторизация</span>
+
+						<a href="#" class="popup__close close-popup">
+							<span></span>
+						</a>
+					</div>
+					<form class="popup-form _form-validation__wrapper"> 
+						<div class="popup-form__title">
+							Логин <a href="popup-registration" class="popup-link hover-black-link">Регистрация</a>
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-human icon"></span>
+							<input type="text" name="" class="input _input-placeholder input_pading-0-50-0-15 _form-validation__input" data-default="Option 0">
+						</div>
+						<div class="popup-form__title">
+							Пароль <a href="popup-password-recovery" class="popup-link hover-black-link">Забыли пароль?</a>
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-lock icon"></span>
+							<input type="password" name="" class="input _input-placeholder input_pading-0-50-0-15 _form-validation__input" data-default="Option 0">
+						</div>
+						<div class="input-checkbox input-checkbox_margin-20px _form-validation__body">
+							<input type="checkbox" id="popup-checkbox-2" class="_form-validation__input"> 
+							<label for="popup-checkbox-2">С правилами сервиса ознакомлен и согласен</label>
+						</div>
+						<button onclick="return false" class="popup-form__button hover-yellow-button _form-validation__button">Войти</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popup-password-recovery">
+			<div class="popup__body">
+				<div class="popup__content">
+
+					<div class="popup__title">
+						<span>Восстановление пароля</span>
+
+						<a href="#" class="popup__close close-popup">
+							<span></span>
+						</a>
+					</div>
+					<form class="popup-form _form-validation__wrapper"> 
+						<div class="popup-form__title">
+							E-mail:
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<span class="icon-email icon"></span>
+							<input type="email" name="" class="input _input-placeholder input_pading-0-50-0-15 _form-validation__input" data-default="Option 0">
+						</div>
+						<div class="input-checkbox input-checkbox_margin-20px _form-validation__body">
+							<input type="checkbox" id="popup-checkbox-3" class="_form-validation__input"> 
+							<label for="popup-checkbox-3">С правилами сервиса ознакомлен и согласен</label>
+						</div>
+						<button onclick="return false" class="popup-form__button hover-yellow-button _form-validation__button">Востановить</button>
+						<div class="popup-form__foter-text">
+							Хотите войти? — <a href="" class="hover-yellow-link">Войти</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popup-payment-order">
+			<div class="popup__body">
+				<div class="popup__content">
+
+					<div class="popup__title">
+						<span>Заказ выплаты</span>
+
+						<a href="#" class="popup__close close-popup">
+							<span></span>
+						</a>
+					</div>
+					<form class="popup-form _form-validation__wrapper"> 
+						<div class="_select" data-state="">
+							<div class="popup-form__wrapper _select__title">
+								<div class=" _select__title-text _select__title-input input input_pading-0-15-0-15" data-default="Option 0">Bitcoin</div>
+							</div>
+
+							<div class="_select__content">
+								<input id="select-place0" class="_select__input" type="radio" name="singleSelect" checked />
+								<label for="select-place0" class="_select__label"></label>
+
+								<input id="select-place1" class="_select__input" type="radio" name="singleSelect" />
+								<label for="select-place1" class="_select__label">Bitcoin</label>
+								<input id="select-place2" class="_select__input" type="radio" name="singleSelect" />
+								<label for="select-place2" class="_select__label">Bitcoin-2</label>
+							</div>
+						</div>
+						<div class="popup-form__title">
+							Сумма выплаты
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<input type="number" name="" class="input _input-placeholder input_pading-0-15-0-15 _form-validation__input" data-default="Option 0">
+						</div>
+						<div class="popup-form__title">
+							Номер Вашего кошелька или счета
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<input type="text" name="" class="input _input-placeholder input_pading-0-15-0-15 _form-validation__input" data-default="Option 0">
+						</div>
+						<div class="popup-form__title">
+							Пароль для входа в личный кабинет
+						</div>
+						<div class="input__wrapper popup-form__wrapper _form-validation__body">
+							<input type="password" name="" class="input _input-placeholder input_pading-0-15-0-15 _form-validation__input" data-default="Option 0">
+						</div>
+						<button onclick="return false" class="popup-form__button hover-yellow-button _form-validation__button">Заказать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="js/custom.js"></script>
+	</body>
+</html>
